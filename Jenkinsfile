@@ -17,7 +17,7 @@ pipeline {
                     extensions: [],
                     userRemoteConfigs: [[
                         credentialsId: 'github-token',
-                        url: 'https://github.com/ZeyOliveira/MLOPS_PROJECT_1.git' 
+                        url: 'https://github.com/ZeyOliveira/MLOps_Hotel_Cancellation_Prediction.git' 
                     ]]
                 )
             }
