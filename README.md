@@ -92,6 +92,18 @@ Este projeto foi construído seguindo um workflow MLOps detalhado, garantindo qu
 *   **Por que é importante:** Colaboração, rastreabilidade e a capacidade de reverter para versões anteriores são fundamentais em qualquer projeto de software.
 *   **Ferramentas/Conceitos:** **Git** (`.gitignore`), GitHub.
 
+## Tecnologias e Habilidades em Destaque
+
+Este projeto me permitiu aprofundar e demonstrar minhas habilidades em diversas áreas:
+
+*   **Linguagens de Programação:** Python (intermediário-avançado).
+*   **Bibliotecas de Data Science:** Pandas, NumPy, Scikit-learn, Seaborn, Matplotlib.
+*   **MLOps:** MLflow (rastreamento de experimentos e registro de modelos), Docker (containerização), Jenkins (CI/CD).
+*   **Cloud:** Experiência com Google Cloud Platform (Buckets, implantação e gerenciamento de recursos).
+*   **Desenvolvimento Web:** Flask (para a aplicação de usuário), HTML/CSS.
+*   **Versionamento:** Git e GitHub.
+*   **Visualização de Dados:** Além das bibliotecas Python, tenho habilidades com Power BI e SQL para dashboards e análises de negócio.
+
 ## Como Ver o Projeto em Ação
 
 
@@ -114,11 +126,23 @@ source venv/bin/activate # No Windows, use 'venv\Scripts\activate'
 4. Instale as dependências
 ```
 pip install -r requirements.txt
-pip install -e .
+in an editable environment: pip install -e .
 ```
 
 5. Rode a aplicação
 ```
 python setup.py
 python pipeline training_pipeline.py
+python application.py
 ```
+
+---
+
+Espero que este `README.md` te dê uma visão clara e empolgante do meu trabalho e das minhas capacidades como estudante de Ciência de Dados buscando uma oportunidade na área de TI. Estou aberto a perguntas e ansioso para discutir mais sobre este projeto!
+
+**Conecte-se comigo:**
+*   **LinkedIn:** [LinkedIn](https://www.linkedin.com/in/zeygleroliveira/)
+*   **GitHub:** [GitHub](https://github.com/ZeyOliveira)
+*   **Gmail:** zeyglerdasilva@gmail.com
+
+---
