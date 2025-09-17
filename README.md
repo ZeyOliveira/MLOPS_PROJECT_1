@@ -19,17 +19,17 @@ Imagine um hotel que não consegue prever quais reservas serão canceladas. Isso
 
 Este projeto foi construído seguindo um workflow MLOps detalhado, garantindo que cada etapa do ciclo de vida do modelo fosse gerenciada de forma eficiente e automatizada. Aqui está um resumo dessa jornada, passo a passo:
 
-### 1. **Database Setup (Configuração do Banco de Dados)**
+### **Database Setup (Configuração do Banco de Dados)**
 *   **O que foi feito:** Preparamos o ambiente para armazenar nossos dados de reserva.
 *   **Por que é importante:** Um banco de dados bem estruturado é a base para qualquer projeto de dados, garantindo que as informações estejam organizadas e acessíveis.
 *   **Ferramenta:** **Google Cloud**, mais especificamente o uso de Buckets.
 
-### 2. 🚀 **Project Setup (Configuração do Projeto)**
+### **Project Setup (Configuração do Projeto)**
 *   **O que foi feito:** Estruturamos o ambiente de desenvolvimento, definindo dependências e a organização do código.
 *   **Por que é importante:** Garante que o projeto seja replicável, fácil de manter e que todos os colaboradores possam rodar sem problemas.
 *   **Ferramentas/Conceitos:** Python, `venv` (ambiente virtual), `requirements.txt` (gerenciamento de dependências), `setup.py` (empacotamento do projeto).
 
-### 3. 📥 **Data Ingestion (Ingestão de Dados)**
+### **Data Ingestion (Ingestão de Dados)**
 *   **O que foi feito:** Desenvolvemos scripts para coletar e carregar os dados brutos das reservas.
 *   **Por que é importante:** É o primeiro contato com os dados! Garantir que a ingestão seja limpa e eficiente é crucial para a qualidade de todo o pipeline.
 *   **Habilidades:** Scripting em Python, manipulação de dados.
@@ -81,17 +81,44 @@ Este projeto foi construído seguindo um workflow MLOps detalhado, garantindo qu
 *   **O que foi feito:** Desenvolvemos uma interface simples para que os usuários possam interagir com o modelo e obter previsões.
 *   **Por que é importante:** O modelo só tem valor se puder ser usado! Uma aplicação amigável torna a inteligência artificial acessível.
 *   **Ferramentas/Conceitos:** Python (Flask/HTML/CSS), desenvolvimento web (`application.py`, `static`, `templates` folders).
+*   **Página de previsões do aplicativo da web:**  
+![GCP](https://github.com/ZeyOliveira/MLOPS_PROJECT_1/blob/main/docs/screenshots/welcome_gcp_run.png)
+
+**Exemplo de saída prevista:**  
+![GCP](https://github.com/ZeyOliveira/MLOPS_PROJECT_1/blob/main/docs/screenshots/google_cloud_run_predict.png)
 
 ### **Code Versioning (Versionamento de Código)**
 *   **O que foi feito:** Gerenciamos todas as alterações de código usando Git.
 *   **Por que é importante:** Colaboração, rastreabilidade e a capacidade de reverter para versões anteriores são fundamentais em qualquer projeto de software.
 *   **Ferramentas/Conceitos:** **Git** (`.gitignore`), GitHub.
 
-## 🚀 Como Ver o Projeto em Ação
+## Como Ver o Projeto em Ação
 
 
 *   **Registro de Monitoramento:** [Logs](https://github.com/ZeyOliveira/MLOPS_PROJECT_1/blob/main/logs/log_2025-09-16.log)
 *   **Screenshots:** Mostrando as partes importantes de interfaces UI locais: [Screenshots](https://github.com/ZeyOliveira/MLOPS_PROJECT_1/tree/main/docs/screenshots)
-*   **Instruções de Execução:** Detalhes sobre como configurar o ambiente e rodar o projeto localmente (ou acessar a versão deployada, se aplicável).
+*   **Instruções de Execução:** Python 3.11+, "pip" gerenciador de pacotes python, "git" ferramenta para controle de versão.
 
+1. Clone o repositório:
+```
+clone do git https://github.com/ZeyOliveira/MLOPS_PROJECT_1.git
+```
+2. Crie um ambiente virtual
+```
+python -m venv venv
+```
+3. Ative o ambiente virtual
+```
+source venv/bin/activate # No Windows, use 'venv\Scripts\activate'
+```
+4. Instale as dependências
+```
+pip install -r requirements.txt
+pip install -e .
+```
 
+5. Rode a aplicação
+```
+python setup.py
+python pipeline training_pipeline.py
+```
