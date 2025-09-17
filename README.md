@@ -15,32 +15,32 @@ Imagine um hotel que não consegue prever quais reservas serão canceladas. Isso
 
 **A Solução:** Um modelo de Machine Learning preditivo, integrado em um pipeline MLOps, que permite ao hotel tomar decisões proativas, otimizar a ocupação e maximizar a receita.
 
-## 🗺️ A Jornada do Projeto: Nosso Workflow MLOps
+## A Jornada do Projeto: Workflow MLOps
 
-Este projeto foi construído seguindo um workflow MLOps detalhado, garantindo que cada etapa do ciclo de vida do modelo fosse gerenciada de forma eficiente e automatizada. Aqui está um resumo da nossa jornada, passo a passo:
+Este projeto foi construído seguindo um workflow MLOps detalhado, garantindo que cada etapa do ciclo de vida do modelo fosse gerenciada de forma eficiente e automatizada. Aqui está um resumo dessa jornada, passo a passo:
 
-### 1. 🏗️ **Database Setup (Configuração do Banco de Dados)**
-*   **O que fizemos:** Preparamos o ambiente para armazenar nossos dados de reserva.
+### 1. **Database Setup (Configuração do Banco de Dados)**
+*   **O que foi feito:** Preparamos o ambiente para armazenar nossos dados de reserva.
 *   **Por que é importante:** Um banco de dados bem estruturado é a base para qualquer projeto de dados, garantindo que as informações estejam organizadas e acessíveis.
-*   **Habilidades em jogo:** **SQL** (minha expertise!), design de schemas, gerenciamento de dados.
+*   **Ferramenta:** **Google Cloud**, mais especificamente o uso de Buckets.
 
 ### 2. 🚀 **Project Setup (Configuração do Projeto)**
-*   **O que fizemos:** Estruturamos o ambiente de desenvolvimento, definindo dependências e a organização do código.
-*   **Por que é importante:** Garante que o projeto seja replicável, fácil de manter e que todos os colaboradores (ou futuros eu!) possam rodá-lo sem problemas.
+*   **O que foi feito:** Estruturamos o ambiente de desenvolvimento, definindo dependências e a organização do código.
+*   **Por que é importante:** Garante que o projeto seja replicável, fácil de manter e que todos os colaboradores possam rodar sem problemas.
 *   **Ferramentas/Conceitos:** Python, `venv` (ambiente virtual), `requirements.txt` (gerenciamento de dependências), `setup.py` (empacotamento do projeto).
 
 ### 3. 📥 **Data Ingestion (Ingestão de Dados)**
-*   **O que fizemos:** Desenvolvemos scripts para coletar e carregar os dados brutos das reservas.
+*   **O que foi feito:** Desenvolvemos scripts para coletar e carregar os dados brutos das reservas.
 *   **Por que é importante:** É o primeiro contato com os dados! Garantir que a ingestão seja limpa e eficiente é crucial para a qualidade de todo o pipeline.
 *   **Habilidades em jogo:** Scripting em Python, manipulação de dados.
 
-### 4. 🧹 **Data Processing (Processamento de Dados)**
-*   **O que fizemos:** Limpamos, transformamos e preparamos os dados brutos para o treinamento do modelo. Isso inclui tratamento de valores ausentes, engenharia de features e codificação de variáveis.
-*   **Por que é importante:** Dados de qualidade são a alma de um bom modelo. Esta etapa transforma o "lixo" em "ouro" para o ML.
+### **Data Processing (Processamento de Dados)**
+*   **O que foi feito:** Limpamos, transformamos e preparamos os dados brutos para o treinamento do modelo. Isso inclui tratamento de valores ausentes, engenharia de features e codificação de variáveis.
+*   **Por que é importante:** Dados de qualidade são importantes para o modelo.
 *   **Habilidades em jogo:** Python (Pandas, NumPy), pré-processamento de dados, engenharia de features.
 
-### 5. 🧠 **Model Training (Treinamento do Modelo)**
-*   **O que fizemos:** Selecionamos e treinamos o modelo de Machine Learning para prever o status da reserva.
+### **Model Training (Treinamento do Modelo)**
+*   **O que foi feito:** Selecionamos e treinamos o modelo de Machine Learning para prever o status da reserva.
 *   **Por que é importante:** Aqui é onde a mágica acontece! O modelo aprende padrões nos dados para fazer previsões precisas.
 *   **Habilidades em jogo:** Machine Learning (Scikit-learn, etc.), avaliação de modelos, otimização de hiperparâmetros.
 
